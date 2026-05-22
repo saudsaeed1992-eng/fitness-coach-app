@@ -7,6 +7,9 @@ export default function Home() {
   const [steps, setSteps] = useState("");
   const [workoutDone, setWorkoutDone] = useState(false);
 
+  const link = (query) =>
+    `https://www.youtube.com/results?search_query=${query}`;
+
   const plan = [
     {
       week: "Week 1",
@@ -16,35 +19,34 @@ export default function Home() {
           day: "Day 1",
           title: "Full Body Strength",
           exercises: [
-            "Goblet Squat — 3 x 10",
-            "Bench Press — 3 x 10",
-            "Cable Row — 3 x 12",
-            "Incline Walk — 15 min"
+            ["Goblet Squat — 3 x 10", "goblet squat beginner form"],
+            ["Dumbbell Bench Press — 3 x 10", "dumbbell bench press tutorial"],
+            ["Cable Row — 3 x 12", "cable row beginner tutorial"],
+            ["Incline Treadmill Walk — 15 min", "incline treadmill walking fat loss"]
           ]
         },
         {
           day: "Day 2",
           title: "Upper Body",
           exercises: [
-            "Shoulder Press — 3 x 10",
-            "Lat Pulldown — 3 x 12",
-            "Chest Press — 3 x 10",
-            "Bike — 15 min"
+            ["Dumbbell Shoulder Press — 3 x 10", "dumbbell shoulder press form"],
+            ["Cable Lat Pulldown — 3 x 12", "lat pulldown cable tutorial"],
+            ["Cable Chest Press — 3 x 10", "cable chest press tutorial"],
+            ["Exercise Bike — 15 min", "stationary bike cardio beginner"]
           ]
         },
         {
           day: "Day 3",
           title: "Lower Body",
           exercises: [
-            "Box Squat — 3 x 12",
-            "Romanian Deadlift — 3 x 10",
-            "Cable Rotation — 3 x 12",
-            "Elliptical — 15 min"
+            ["Box Squat — 3 x 12", "box squat beginner form"],
+            ["Dumbbell Romanian Deadlift — 3 x 10", "dumbbell romanian deadlift form"],
+            ["Cable Core Rotation — 3 x 12", "cable core rotation tutorial"],
+            ["Elliptical — 15 min", "elliptical workout beginner"]
           ]
         }
       ]
     },
-
     {
       week: "Week 2",
       focus: "Fat loss progression",
@@ -53,72 +55,70 @@ export default function Home() {
           day: "Day 1",
           title: "Strength Progression",
           exercises: [
-            "Goblet Squat — 4 x 10",
-            "Bench Press — 4 x 10",
-            "Cable Row — 4 x 12",
-            "Incline Walk — 20 min"
+            ["Goblet Squat — 4 x 10", "goblet squat beginner form"],
+            ["Dumbbell Bench Press — 4 x 10", "dumbbell bench press tutorial"],
+            ["Cable Row — 4 x 12", "cable row beginner tutorial"],
+            ["Incline Walk — 20 min", "incline treadmill walking fat loss"]
           ]
         },
         {
           day: "Day 2",
           title: "Upper Conditioning",
           exercises: [
-            "Shoulder Press — 4 x 10",
-            "Lat Pulldown — 4 x 12",
-            "Chest Press — 3 x 12",
-            "Bike — 20 min"
+            ["Dumbbell Shoulder Press — 4 x 10", "dumbbell shoulder press form"],
+            ["Cable Lat Pulldown — 4 x 12", "lat pulldown cable tutorial"],
+            ["Cable Chest Press — 3 x 12", "cable chest press tutorial"],
+            ["Bike Cardio — 20 min", "stationary bike cardio beginner"]
           ]
         },
         {
           day: "Day 3",
           title: "Lower + Core",
           exercises: [
-            "Deadlift — 3 x 10",
-            "Box Squat — 4 x 12",
-            "Plank — 3 x 30 sec",
-            "Elliptical — 20 min"
+            ["Dumbbell Deadlift — 3 x 10", "dumbbell deadlift beginner form"],
+            ["Box Squat — 4 x 12", "box squat beginner form"],
+            ["Plank — 3 x 30 sec", "plank beginner form"],
+            ["Elliptical — 20 min", "elliptical workout beginner"]
           ]
         }
       ]
     },
-
     {
       week: "Week 3",
-      focus: "High calorie burn",
+      focus: "Higher calorie burn",
       days: [
         {
           day: "Day 1",
           title: "Strength + Cardio",
           exercises: [
-            "Goblet Squat — 4 x 12",
-            "Bench Press — 4 x 10",
-            "Cable Row — 4 x 12",
-            "Incline Walk — 25 min"
+            ["Goblet Squat — 4 x 12", "goblet squat beginner form"],
+            ["Dumbbell Bench Press — 4 x 10", "dumbbell bench press tutorial"],
+            ["Cable Row — 4 x 12", "cable row beginner tutorial"],
+            ["Incline Walk — 25 min", "incline treadmill walking fat loss"]
           ]
         },
         {
           day: "Day 2",
           title: "Upper Burn",
           exercises: [
-            "Shoulder Press — 4 x 12",
-            "Lat Pulldown — 4 x 12",
-            "Face Pull — 4 x 15",
-            "Bike Intervals — 20 min"
+            ["Dumbbell Shoulder Press — 4 x 12", "dumbbell shoulder press form"],
+            ["Cable Lat Pulldown — 4 x 12", "lat pulldown cable tutorial"],
+            ["Cable Face Pull — 4 x 15", "cable face pull correct form"],
+            ["Bike Intervals — 20 min", "stationary bike interval workout beginner"]
           ]
         },
         {
           day: "Day 3",
           title: "Lower Burn",
           exercises: [
-            "Deadlift — 4 x 10",
-            "Lunges — 3 x 12",
-            "Cable Rotation — 3 x 15",
-            "Elliptical — 25 min"
+            ["Dumbbell Deadlift — 4 x 10", "dumbbell deadlift beginner form"],
+            ["Reverse Lunges — 3 x 12", "reverse lunge beginner form"],
+            ["Cable Core Rotation — 3 x 15", "cable core rotation tutorial"],
+            ["Elliptical — 25 min", "elliptical workout beginner"]
           ]
         }
       ]
     },
-
     {
       week: "Week 4",
       focus: "Recovery + consistency",
@@ -127,28 +127,29 @@ export default function Home() {
           day: "Day 1",
           title: "Light Strength",
           exercises: [
-            "Goblet Squat — 3 x 10",
-            "Bench Press — 3 x 10",
-            "Cable Row — 3 x 12",
-            "Walk — 20 min"
+            ["Goblet Squat — 3 x 10", "goblet squat beginner form"],
+            ["Dumbbell Bench Press — 3 x 10", "dumbbell bench press tutorial"],
+            ["Cable Row — 3 x 12", "cable row beginner tutorial"],
+            ["Easy Walk — 20 min", "treadmill walking workout beginner"]
           ]
         },
         {
           day: "Day 2",
           title: "Upper Easy",
           exercises: [
-            "Shoulder Press — 3 x 10",
-            "Lat Pulldown — 3 x 10",
-            "Bike — 20 min"
+            ["Dumbbell Shoulder Press — 3 x 10", "dumbbell shoulder press form"],
+            ["Cable Lat Pulldown — 3 x 10", "lat pulldown cable tutorial"],
+            ["Cable Face Pull — 3 x 15", "cable face pull correct form"],
+            ["Bike — 20 min", "stationary bike cardio beginner"]
           ]
         },
         {
           day: "Day 3",
           title: "Mobility Day",
           exercises: [
-            "Stretching — 15 min",
-            "Mobility Drills — 15 min",
-            "Light Walk — 20 min"
+            ["Stretching — 15 min", "full body stretching routine beginner"],
+            ["Mobility Drills — 15 min", "beginner mobility routine"],
+            ["Light Walk — 20 min", "walking workout beginner fat loss"]
           ]
         }
       ]
@@ -156,38 +157,40 @@ export default function Home() {
   ];
 
   function saveProgress() {
-    alert("Progress Saved Successfully!");
+    alert("Progress saved on this device.");
   }
 
   return (
     <main style={styles.page}>
-      <h1 style={styles.title}>🏋️ Babê Kaius</h1>
-      <p style={styles.subtitle}>Modern Navy Fitness Dashboard</p>
+      <header style={styles.header}>
+        <h1 style={styles.title}>Babê Kaius</h1>
+        <p style={styles.subtitle}>1-Month Navy Fitness Dashboard</p>
+      </header>
 
       <section style={styles.card}>
-        <h2>📊 Progress Tracker</h2>
+        <h2>Progress Tracker</h2>
 
         <input
           style={styles.input}
-          placeholder="Current Weight (kg)"
+          placeholder="Current Weight KG"
           value={weight}
           onChange={(e) => setWeight(e.target.value)}
         />
 
         <input
           style={styles.input}
-          placeholder="Daily Steps"
+          placeholder="Steps Today"
           value={steps}
           onChange={(e) => setSteps(e.target.value)}
         />
 
-        <label style={{ color: "white" }}>
+        <label style={styles.label}>
           <input
             type="checkbox"
             checked={workoutDone}
             onChange={(e) => setWorkoutDone(e.target.checked)}
-          />{" "}
-          Workout Completed
+          />
+          Workout completed today
         </label>
 
         <button style={styles.button} onClick={saveProgress}>
@@ -196,15 +199,15 @@ export default function Home() {
       </section>
 
       <section style={styles.card}>
-        <h2>🥗 Nutrition</h2>
-        <p>Calories: 2100–2300 kcal</p>
-        <p>Protein: 140–170g</p>
-        <p>Water: 3 Liters</p>
+        <h2>Nutrition Targets</h2>
+        <p>Calories: 2100–2300 kcal/day</p>
+        <p>Protein: 140–170g/day</p>
+        <p>Water: 2.5–3.5L/day</p>
       </section>
 
       {plan.map((week) => (
         <section key={week.week} style={styles.week}>
-          <h2>{week.week}</h2>
+          <h2 style={styles.weekTitle}>{week.week}</h2>
           <p style={styles.focus}>{week.focus}</p>
 
           <div style={styles.grid}>
@@ -213,9 +216,19 @@ export default function Home() {
                 <h3>{day.day}</h3>
                 <h4>{day.title}</h4>
 
-                <ul>
+                <ul style={styles.list}>
                   {day.exercises.map((exercise, index) => (
-                    <li key={index}>{exercise}</li>
+                    <li key={index} style={styles.exercise}>
+                      <span>{exercise[0]}</span>
+                      <a
+                        href={link(exercise[1])}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        style={styles.youtube}
+                      >
+                        ▶ YouTube Tutorial
+                      </a>
+                    </li>
                   ))}
                 </ul>
               </div>
@@ -230,63 +243,78 @@ export default function Home() {
 const styles = {
   page: {
     minHeight: "100vh",
-    background:
-      "linear-gradient(135deg, #020617, #0f172a, #1e293b)",
-    color: "white",
+    background: "linear-gradient(135deg, #020617, #0f172a, #1e293b)",
+    color: "#ffffff",
     fontFamily: "Arial, sans-serif",
-    padding: "30px"
+    padding: "28px"
+  },
+
+  header: {
+    marginBottom: "28px"
   },
 
   title: {
     fontSize: "52px",
-    fontWeight: "bold",
-    marginBottom: "10px",
+    fontWeight: "800",
+    margin: 0,
     color: "#ffffff"
   },
 
   subtitle: {
+    fontSize: "20px",
     color: "#ffffff",
-    marginBottom: "30px",
-    fontSize: "20px"
+    marginTop: "8px"
   },
 
   card: {
     background: "rgba(255,255,255,0.08)",
-    border: "1px solid rgba(255,255,255,0.12)",
-    borderRadius: "18px",
+    border: "1px solid rgba(255,255,255,0.14)",
+    borderRadius: "20px",
     padding: "22px",
-    marginBottom: "25px",
-    backdropFilter: "blur(10px)"
+    marginBottom: "24px",
+    boxShadow: "0 12px 35px rgba(0,0,0,0.35)"
   },
 
   input: {
+    display: "block",
     width: "100%",
-    maxWidth: "350px",
-    padding: "12px",
+    maxWidth: "360px",
+    padding: "13px",
     marginBottom: "12px",
-    borderRadius: "10px",
+    borderRadius: "12px",
     border: "none",
     fontSize: "16px"
   },
 
+  label: {
+    display: "block",
+    marginTop: "8px",
+    color: "#ffffff"
+  },
+
   button: {
-    marginTop: "10px",
-    background: "#22c55e",
-    color: "white",
-    padding: "12px 18px",
+    marginTop: "16px",
+    background: "#2563eb",
+    color: "#ffffff",
+    padding: "13px 20px",
     border: "none",
-    borderRadius: "10px",
-    fontWeight: "bold",
+    borderRadius: "12px",
+    fontWeight: "700",
     cursor: "pointer"
   },
 
   week: {
-    marginTop: "40px"
+    marginTop: "36px"
+  },
+
+  weekTitle: {
+    fontSize: "30px",
+    marginBottom: "6px"
   },
 
   focus: {
     color: "#e2e8f0",
-    marginBottom: "15px"
+    marginBottom: "18px"
   },
 
   grid: {
@@ -296,10 +324,28 @@ const styles = {
   },
 
   dayCard: {
-    background: "rgba(255,255,255,0.08)",
-    border: "1px solid rgba(255,255,255,0.1)",
-    borderRadius: "18px",
+    background: "rgba(255,255,255,0.09)",
+    border: "1px solid rgba(255,255,255,0.14)",
+    borderRadius: "20px",
     padding: "20px",
-    color: "white"
+    color: "#ffffff"
+  },
+
+  list: {
+    paddingLeft: "18px"
+  },
+
+  exercise: {
+    marginBottom: "14px",
+    lineHeight: "1.5"
+  },
+
+  youtube: {
+    display: "block",
+    color: "#93c5fd",
+    textDecoration: "none",
+    fontSize: "14px",
+    marginTop: "3px",
+    fontWeight: "700"
   }
 };
