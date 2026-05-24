@@ -426,189 +426,147 @@ export default function Home() {
         ))}
       </section>
    <section style={styles.card}>
-  <h2>🥗 Dubai Fat Loss Food Plan</h2>
+  <h2>🥗 Simple Dubai Fat Loss Food Plan</h2>
 
   <div style={styles.foodGrid}>
 
-    {/* BREAKFAST */}
     <div style={styles.foodCard}>
       <h3>Breakfast (10:00 AM)</h3>
 
-      <p><strong>High Protein Egg & Oats Bowl</strong></p>
+      <p><strong>Eggs + Oats + Protein Shake</strong></p>
 
-      <p>Calories: 620 kcal</p>
-      <p>Protein: 45g</p>
-      <p>Carbs: 50g</p>
-      <p>Fats: 18g</p>
-
-      <br />
+      <p>Calories: 550–650 kcal</p>
+      <p>Protein: 55–65g</p>
+      <p>Carbs: 45–55g</p>
+      <p>Fats: 15–20g</p>
 
       <p><strong>Ingredients:</strong></p>
+      <p>• 2 whole eggs</p>
+      <p>• 3 egg whites</p>
+      <p>• 60g oats</p>
+      <p>• 1 scoop protein powder</p>
+      <p>• 1 banana</p>
 
-      <p>• 4 Egg Whites</p>
-      <p>• 2 Full Eggs</p>
-      <p>• 80g Oats</p>
-      <p>• 1 Banana</p>
-      <p>• Cinnamon</p>
-      <p>• 1 tbsp Peanut Butter</p>
-
-      <br />
-
-      <p><strong>Preparation:</strong></p>
-
+      <p><strong>How to make:</strong></p>
       <p>
-        1. Cook oats with hot water.
+        1. Cook eggs in a pan with very little oil.
         <br />
-        2. Add sliced banana and cinnamon.
+        2. Cook oats with hot water.
         <br />
-        3. Cook eggs separately with low oil.
+        3. Mix protein powder with water.
         <br />
-        4. Add peanut butter on top.
+        4. Eat banana with oats.
       </p>
 
-      <br />
-
-      <p><strong>Dubai Ingredient Prices:</strong></p>
-
-      <p>Eggs — Carrefour — ~18 AED</p>
-      <p>Oats — Lulu — ~14 AED</p>
-      <p>Bananas — Viva — ~7 AED</p>
-      <p>Peanut Butter — Carrefour — ~24 AED</p>
-
-      <br />
+      <p><strong>Dubai Sources:</strong></p>
+      <p>Eggs — Carrefour / Lulu — ~18 AED</p>
+      <p>Oats — Lulu / Carrefour — ~14 AED</p>
+      <p>Banana — Viva / Carrefour — ~7 AED</p>
+      <p>Protein Powder — Life Pharmacy / Amazon UAE</p>
 
       <a
-        href="https://www.youtube.com/results?search_query=high+protein+breakfast+recipe"
+        href="https://www.youtube.com/results?search_query=eggs+oats+protein+shake+breakfast"
         target="_blank"
         style={styles.link}
       >
-        ▶️ Watch Breakfast Recipe
+        ▶️ Watch Same Breakfast Recipe
       </a>
     </div>
 
-    {/* SNACKS */}
     <div style={styles.foodCard}>
-      <h3>Healthy Snacks (3:30 PM)</h3>
+      <h3>Snack (3:30 PM)</h3>
 
-      <p><strong>Option 1:</strong> Greek Yogurt + Almonds</p>
+      <p><strong>Protein Shake + Fruit</strong></p>
 
-      <p>Calories: 250 kcal</p>
-      <p>Protein: 20g</p>
-      <p>Carbs: 12g</p>
-      <p>Fats: 10g</p>
+      <p>Calories: 250–350 kcal</p>
+      <p>Protein: 25–35g</p>
+      <p>Carbs: 20–30g</p>
+      <p>Fats: 2–6g</p>
 
-      <br />
+      <p><strong>Ingredients:</strong></p>
+      <p>• 1 scoop protein powder</p>
+      <p>• 1 banana or apple</p>
+      <p>• Water</p>
 
-      <p><strong>Option 2:</strong> Protein Shake + Banana</p>
-
-      <p>Calories: 280 kcal</p>
-      <p>Protein: 30g</p>
-      <p>Carbs: 22g</p>
-      <p>Fats: 6g</p>
-
-      <br />
-
-      <p><strong>Preparation:</strong></p>
-
+      <p><strong>How to make:</strong></p>
       <p>
-        1. Mix protein powder with cold water.
+        1. Add protein powder to water.
         <br />
-        2. Eat banana separately.
+        2. Shake well.
         <br />
-        3. Greek yogurt can be mixed with almonds.
+        3. Eat fruit separately.
       </p>
 
-      <br />
-
-      <p><strong>Dubai Ingredient Prices:</strong></p>
-
-      <p>Greek Yogurt — Carrefour — ~18 AED</p>
-      <p>Almonds — Lulu — ~22 AED</p>
-      <p>Protein Powder — Life Pharmacy — ~220 AED</p>
-      <p>Bananas — Viva — ~7 AED</p>
-
-      <br />
+      <p><strong>Dubai Sources:</strong></p>
+      <p>Protein Powder — Life Pharmacy / Amazon UAE</p>
+      <p>Banana or Apple — Viva / Carrefour — ~7–12 AED</p>
 
       <a
-        href="https://www.youtube.com/results?search_query=healthy+high+protein+snacks"
+        href="https://www.youtube.com/results?search_query=protein+shake+with+banana+recipe"
         target="_blank"
         style={styles.link}
       >
-        ▶️ Watch Snack Recipes
+        ▶️ Watch Same Snack Recipe
       </a>
     </div>
 
-    {/* DINNER */}
     <div style={styles.foodCard}>
       <h3>Dinner (7:00 PM)</h3>
 
-      <p><strong>Salmon & Sweet Potato Plate</strong></p>
+      <p><strong>Chicken Rice Bowl + Protein Shake</strong></p>
 
-      <p>Calories: 720 kcal</p>
-      <p>Protein: 60g</p>
-      <p>Carbs: 55g</p>
-      <p>Fats: 24g</p>
-
-      <br />
+      <p>Calories: 750–900 kcal</p>
+      <p>Protein: 70–85g</p>
+      <p>Carbs: 70–90g</p>
+      <p>Fats: 15–25g</p>
 
       <p><strong>Ingredients:</strong></p>
+      <p>• 200g chicken breast</p>
+      <p>• 200g cooked rice</p>
+      <p>• Cucumber or salad</p>
+      <p>• 1 scoop protein powder</p>
+      <p>• Lemon, salt, pepper, paprika</p>
 
-      <p>• 220g Salmon</p>
-      <p>• 250g Sweet Potato</p>
-      <p>• Spinach</p>
-      <p>• Olive Oil</p>
-      <p>• Lemon</p>
-
-      <br />
-
-      <p><strong>Preparation:</strong></p>
-
+      <p><strong>How to make:</strong></p>
       <p>
-        1. Grill salmon for 8–10 minutes.
+        1. Season chicken with lemon, salt, pepper, and paprika.
         <br />
-        2. Bake sweet potato in oven.
+        2. Grill or air-fry chicken for 12–15 minutes.
         <br />
-        3. Add spinach with olive oil and lemon.
+        3. Cook rice.
+        <br />
+        4. Add cucumber or salad.
+        <br />
+        5. Drink protein shake after dinner if protein is low.
       </p>
 
-      <br />
-
-      <p><strong>Dubai Ingredient Prices:</strong></p>
-
-      <p>Salmon — Carrefour — ~55 AED/kg</p>
-      <p>Sweet Potato — Lulu — ~12 AED</p>
-      <p>Spinach — Viva — ~7 AED</p>
-      <p>Olive Oil — Carrefour — ~35 AED</p>
-
-      <br />
+      <p><strong>Dubai Sources:</strong></p>
+      <p>Chicken Breast — Carrefour / Lulu — ~25–32 AED/kg</p>
+      <p>Rice — Lulu / Carrefour — ~14–35 AED</p>
+      <p>Salad — Viva / Carrefour — ~7–15 AED</p>
+      <p>Protein Powder — Life Pharmacy / Amazon UAE</p>
 
       <a
-        href="https://www.youtube.com/results?search_query=healthy+salmon+meal+prep"
+        href="https://www.youtube.com/results?search_query=chicken+rice+bowl+meal+prep"
         target="_blank"
         style={styles.link}
       >
-        ▶️ Watch Dinner Recipe
+        ▶️ Watch Same Dinner Recipe
       </a>
     </div>
 
   </div>
 
   <div style={styles.warningBox}>
-    ⚠️ Target: Lose 7kg between 26/05/2026 and 26/07/2026
+    ⚠️ Simple Rule:
     <br />
+    Use food for most protein, then complete the rest with protein powder.
     <br />
-
-    Maintain:
+    Target daily protein: 150–180g.
     <br />
-    • 8,000–10,000 daily steps
+    Water: 3L daily.
     <br />
-    • 3 workout days weekly
-    <br />
-    • 1 knee recovery day
-    <br />
-    • Water: 3L daily
-    <br />
-    • Sleep: Minimum 7 hours
+    Steps: 8,000–10,000 daily.
   </div>
 </section>
     </main>
