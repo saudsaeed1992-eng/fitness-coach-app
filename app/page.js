@@ -271,8 +271,7 @@ export default function Home() {
       <p style={styles.subtitle}>
         2-Month Transformation Dashboard
       </p>
-
-      {activeSection === "progress" && (
+    
 <section style={styles.card}>
   <h2>📊 Live Progress Tracker</h2>
         <input
@@ -338,8 +337,7 @@ export default function Home() {
             schedule.
           </div>
         )}
-      </section>
-      )}  
+      </section> 
 
       <section style={styles.warning}>
         <h2>⚠️ Knee Safety</h2>
