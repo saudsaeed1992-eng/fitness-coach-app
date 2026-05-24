@@ -578,6 +578,7 @@ export default function Home() {
     Steps: 8,000–10,000 daily.
   </div>
 </section>
+)}          
     </main>
     </>
   );
