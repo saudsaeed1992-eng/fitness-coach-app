@@ -263,35 +263,9 @@ export default function Home() {
 
   return (
 <>
-<div style={styles.navbar}>
-<button
-style={styles.navButton}
-onClick={() => setActiveSection("home")}
-> 
-Home
-</button>
+{activeSection === "workout" && (
 
-<button
-style={styles.navButton}
-onClick={() => setActiveSection("workout")}
-> 
-Workout
-</button>
-
-<button
-style={styles.navButton}
-onClick={() => setActiveSection("food")}
-> 
-Food
-</button>
-
-<button
-style={styles.navButton}
-onClick={() => setActiveSection("progress")}
-> 
-Progress
-</button>
-</div>
+<section style={styles.planSection}>
     <main style={styles.page}>
       <h1 style={styles.title}>
         Babê Kaius
@@ -837,4 +811,21 @@ const styles = {
 
     fontWeight: 700,
   },
+  navbar: {
+  display: "flex",
+  gap: 12,
+  marginTop: 20,
+  marginBottom: 20,
+  flexWrap: "wrap",
+},
+
+navButton: {
+  padding: "12px 18px",
+  borderRadius: 14,
+  border: "none",
+  cursor: "pointer",
+  fontWeight: 700,
+  background: "rgba(255,255,255,0.12)",
+  color: "white",
+},
 };
