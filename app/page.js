@@ -348,7 +348,7 @@ export default function Home() {
         </p>
       </section>
 
-{activeSection === "workout" && (
+
 
       <section style={styles.planSection}>
         <h2>
@@ -427,8 +427,7 @@ export default function Home() {
             </div>
           </div>
         ))}
-      </section>
-      )}    
+      </section>    
    <section style={styles.card}>
   <h2>🥗 Simple Dubai Fat Loss Food Plan</h2>
 
