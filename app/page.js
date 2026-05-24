@@ -263,9 +263,6 @@ export default function Home() {
 
   return (
 <>
-{activeSection === "workout" && (
-
-<section style={styles.planSection}>
     <main style={styles.page}>
       <h1 style={styles.title}>
         Babê Kaius
