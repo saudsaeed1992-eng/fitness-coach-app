@@ -1,10 +1,9 @@
 {
   "name": "Babê Kaius",
-  "short_name": "Babê Kaius",
-  "description": "Premium Fitness & Fat Loss Dashboard",
+  "short_name": "BabêKaius",
   "start_url": "/",
   "display": "standalone",
-  "background_color": "#020617",
+  "background_color": "#071739",
   "theme_color": "#071739",
   "orientation": "portrait",
   "icons": [
