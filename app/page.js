@@ -3,6 +3,7 @@
 import { useState } from "react";
 
 export default function Home() {
+  const [activeSection, setActiveSection] = useState("home");
   const [weight, setWeight] = useState("");
   const [steps, setSteps] = useState("");
   const [water, setWater] = useState("");
@@ -261,6 +262,36 @@ export default function Home() {
   );
 
   return (
+<>
+<div style={styles.navbar}>
+<button
+style={styles.navButton}
+onClick={() => setActiveSection("home")}
+> 
+Home
+</button>
+
+<button
+style={styles.navButton}
+onClick={() => setActiveSection("workout")}
+> 
+Workout
+</button>
+
+<button
+style={styles.navButton}
+onClick={() => setActiveSection("food")}
+> 
+Food
+</button>
+
+<button
+style={styles.navButton}
+onClick={() => setActiveSection("progress")}
+> 
+Progress
+</button>
+</div>
     <main style={styles.page}>
       <h1 style={styles.title}>
         Babê Kaius
@@ -570,6 +601,7 @@ export default function Home() {
   </div>
 </section>
     </main>
+    </>
   );
 }
 
