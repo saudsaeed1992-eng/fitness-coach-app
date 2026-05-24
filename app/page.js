@@ -359,7 +359,7 @@ export default function Home() {
             schedule.
           </div>
       </section> 
-      )}
+              
       <section style={styles.warning}>
         <h2>⚠️ Knee Safety</h2>
 
