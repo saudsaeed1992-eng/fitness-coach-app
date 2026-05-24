@@ -378,7 +378,7 @@ Progress
           Stop any sharp knee pain.
         </p>
       </section>
-      )}
+
 {activeSection === "workout" && (
 
       <section style={styles.planSection}>
