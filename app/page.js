@@ -425,118 +425,179 @@ export default function Home() {
           </div>
         ))}
       </section>
-    <section style={styles.card}>
+   <section style={styles.card}>
   <h2>🥗 Dubai Fat Loss Food Plan</h2>
 
   <div style={styles.foodGrid}>
+
+    {/* BREAKFAST */}
     <div style={styles.foodCard}>
-      <h3>Meal 1 — Lunch (1:00 PM)</h3>
+      <h3>Breakfast (10:00 AM)</h3>
 
-      <p><strong>Chicken Rice Bowl</strong></p>
+      <p><strong>High Protein Egg & Oats Bowl</strong></p>
 
-      <p>Calories: 650 kcal</p>
-      <p>Protein: 55g</p>
-      <p>Carbs: 60g</p>
+      <p>Calories: 620 kcal</p>
+      <p>Protein: 45g</p>
+      <p>Carbs: 50g</p>
       <p>Fats: 18g</p>
 
       <br />
 
       <p><strong>Ingredients:</strong></p>
 
-      <ul>
-        <li>200g chicken breast</li>
-        <li>150g jasmine rice</li>
-        <li>Broccoli</li>
-        <li>Olive oil</li>
-        <li>Garlic + paprika</li>
-      </ul>
+      <p>• 4 Egg Whites</p>
+      <p>• 2 Full Eggs</p>
+      <p>• 80g Oats</p>
+      <p>• 1 Banana</p>
+      <p>• Cinnamon</p>
+      <p>• 1 tbsp Peanut Butter</p>
 
       <br />
 
-      <p><strong>How To Make:</strong></p>
+      <p><strong>Preparation:</strong></p>
 
-      <ol>
-        <li>Cook rice</li>
-        <li>Season chicken</li>
-        <li>Air fry or grill 10 mins</li>
-        <li>Steam broccoli</li>
-      </ol>
+      <p>
+        1. Cook oats with hot water.
+        <br />
+        2. Add sliced banana and cinnamon.
+        <br />
+        3. Cook eggs separately with low oil.
+        <br />
+        4. Add peanut butter on top.
+      </p>
+
+      <br />
+
+      <p><strong>Dubai Ingredient Prices:</strong></p>
+
+      <p>Eggs — Carrefour — ~18 AED</p>
+      <p>Oats — Lulu — ~14 AED</p>
+      <p>Bananas — Viva — ~7 AED</p>
+      <p>Peanut Butter — Carrefour — ~24 AED</p>
 
       <br />
 
       <a
-        href="https://www.youtube.com/results?search_query=healthy+chicken+rice+bowl"
+        href="https://www.youtube.com/results?search_query=high+protein+breakfast+recipe"
         target="_blank"
         style={styles.link}
       >
-        ▶️ Watch Recipe
+        ▶️ Watch Breakfast Recipe
       </a>
-
-      <br />
-      <br />
-
-      <p><strong>Dubai Ingredients:</strong></p>
-
-      <p>Chicken Breast — Carrefour — ~32 AED/kg</p>
-      <p>Rice — Lulu Hypermarket — ~14 AED</p>
-      <p>Broccoli — Viva — ~8 AED</p>
     </div>
 
+    {/* SNACKS */}
     <div style={styles.foodCard}>
-      <h3>Meal 2 — Dinner (8:00 PM)</h3>
+      <h3>Healthy Snacks (3:30 PM)</h3>
 
-      <p><strong>Salmon + Sweet Potato</strong></p>
+      <p><strong>Option 1:</strong> Greek Yogurt + Almonds</p>
+
+      <p>Calories: 250 kcal</p>
+      <p>Protein: 20g</p>
+      <p>Carbs: 12g</p>
+      <p>Fats: 10g</p>
+
+      <br />
+
+      <p><strong>Option 2:</strong> Protein Shake + Banana</p>
+
+      <p>Calories: 280 kcal</p>
+      <p>Protein: 30g</p>
+      <p>Carbs: 22g</p>
+      <p>Fats: 6g</p>
+
+      <br />
+
+      <p><strong>Preparation:</strong></p>
+
+      <p>
+        1. Mix protein powder with cold water.
+        <br />
+        2. Eat banana separately.
+        <br />
+        3. Greek yogurt can be mixed with almonds.
+      </p>
+
+      <br />
+
+      <p><strong>Dubai Ingredient Prices:</strong></p>
+
+      <p>Greek Yogurt — Carrefour — ~18 AED</p>
+      <p>Almonds — Lulu — ~22 AED</p>
+      <p>Protein Powder — Life Pharmacy — ~220 AED</p>
+      <p>Bananas — Viva — ~7 AED</p>
+
+      <br />
+
+      <a
+        href="https://www.youtube.com/results?search_query=healthy+high+protein+snacks"
+        target="_blank"
+        style={styles.link}
+      >
+        ▶️ Watch Snack Recipes
+      </a>
+    </div>
+
+    {/* DINNER */}
+    <div style={styles.foodCard}>
+      <h3>Dinner (7:00 PM)</h3>
+
+      <p><strong>Salmon & Sweet Potato Plate</strong></p>
 
       <p>Calories: 720 kcal</p>
       <p>Protein: 60g</p>
       <p>Carbs: 55g</p>
-      <p>Fats: 22g</p>
+      <p>Fats: 24g</p>
 
       <br />
 
       <p><strong>Ingredients:</strong></p>
 
-      <ul>
-        <li>200g salmon</li>
-        <li>250g sweet potato</li>
-        <li>Spinach salad</li>
-        <li>Lemon + pepper</li>
-      </ul>
+      <p>• 220g Salmon</p>
+      <p>• 250g Sweet Potato</p>
+      <p>• Spinach</p>
+      <p>• Olive Oil</p>
+      <p>• Lemon</p>
 
       <br />
 
-      <p><strong>How To Make:</strong></p>
+      <p><strong>Preparation:</strong></p>
 
-      <ol>
-        <li>Bake salmon 12 mins</li>
-        <li>Air fry sweet potato</li>
-        <li>Prepare salad</li>
-      </ol>
-
-      <br />
-
-      <a
-        href="https://www.youtube.com/results?search_query=healthy+salmon+sweet+potato"
-        target="_blank"
-        style={styles.link}
-      >
-        ▶️ Watch Recipe
-      </a>
+      <p>
+        1. Grill salmon for 8–10 minutes.
+        <br />
+        2. Bake sweet potato in oven.
+        <br />
+        3. Add spinach with olive oil and lemon.
+      </p>
 
       <br />
-      <br />
 
-      <p><strong>Dubai Ingredients:</strong></p>
+      <p><strong>Dubai Ingredient Prices:</strong></p>
 
       <p>Salmon — Carrefour — ~55 AED/kg</p>
       <p>Sweet Potato — Lulu — ~12 AED</p>
       <p>Spinach — Viva — ~7 AED</p>
+      <p>Olive Oil — Carrefour — ~35 AED</p>
+
+      <br />
+
+      <a
+        href="https://www.youtube.com/results?search_query=healthy+salmon+meal+prep"
+        target="_blank"
+        style={styles.link}
+      >
+        ▶️ Watch Dinner Recipe
+      </a>
     </div>
+
   </div>
 
   <div style={styles.warningBox}>
     ⚠️ Target: Lose 7kg between 26/05/2026 and 26/07/2026
     <br />
+    <br />
+
     Maintain:
     <br />
     • 8,000–10,000 daily steps
@@ -546,8 +607,10 @@ export default function Home() {
     • 1 knee recovery day
     <br />
     • Water: 3L daily
+    <br />
+    • Sleep: Minimum 7 hours
   </div>
-</section>      
+</section>
     </main>
   );
 }
