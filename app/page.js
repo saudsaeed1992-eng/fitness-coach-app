@@ -301,9 +301,9 @@ Progress
         2-Month Transformation Dashboard
       </p>
 
-      <section style={styles.card}>
-        <h2>📊 Live Progress Tracker</h2>
-
+      {activeSection === "progress" && (
+<section style={styles.card}>
+  <h2>📊 Live Progress Tracker</h2>
         <input
           style={styles.input}
           placeholder="Current Weight (kg)"
@@ -368,6 +368,7 @@ Progress
           </div>
         )}
       </section>
+      )}  
 
       <section style={styles.warning}>
         <h2>⚠️ Knee Safety</h2>
@@ -377,6 +378,8 @@ Progress
           Stop any sharp knee pain.
         </p>
       </section>
+      )}
+{activeSection === "workout" && (
 
       <section style={styles.planSection}>
         <h2>
@@ -456,6 +459,7 @@ Progress
           </div>
         ))}
       </section>
+      )}    
    <section style={styles.card}>
   <h2>🥗 Simple Dubai Fat Loss Food Plan</h2>
 
