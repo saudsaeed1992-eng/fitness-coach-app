@@ -358,9 +358,8 @@ export default function Home() {
             Weight loss target behind
             schedule.
           </div>
-        )}
       </section> 
-
+      )}
       <section style={styles.warning}>
         <h2>⚠️ Knee Safety</h2>
 
