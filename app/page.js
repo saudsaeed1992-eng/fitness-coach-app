@@ -425,6 +425,129 @@ export default function Home() {
           </div>
         ))}
       </section>
+    <section style={styles.card}>
+  <h2>🥗 Dubai Fat Loss Food Plan</h2>
+
+  <div style={styles.foodGrid}>
+    <div style={styles.foodCard}>
+      <h3>Meal 1 — Lunch (1:00 PM)</h3>
+
+      <p><strong>Chicken Rice Bowl</strong></p>
+
+      <p>Calories: 650 kcal</p>
+      <p>Protein: 55g</p>
+      <p>Carbs: 60g</p>
+      <p>Fats: 18g</p>
+
+      <br />
+
+      <p><strong>Ingredients:</strong></p>
+
+      <ul>
+        <li>200g chicken breast</li>
+        <li>150g jasmine rice</li>
+        <li>Broccoli</li>
+        <li>Olive oil</li>
+        <li>Garlic + paprika</li>
+      </ul>
+
+      <br />
+
+      <p><strong>How To Make:</strong></p>
+
+      <ol>
+        <li>Cook rice</li>
+        <li>Season chicken</li>
+        <li>Air fry or grill 10 mins</li>
+        <li>Steam broccoli</li>
+      </ol>
+
+      <br />
+
+      <a
+        href="https://www.youtube.com/results?search_query=healthy+chicken+rice+bowl"
+        target="_blank"
+        style={styles.link}
+      >
+        ▶️ Watch Recipe
+      </a>
+
+      <br />
+      <br />
+
+      <p><strong>Dubai Ingredients:</strong></p>
+
+      <p>Chicken Breast — Carrefour — ~32 AED/kg</p>
+      <p>Rice — Lulu Hypermarket — ~14 AED</p>
+      <p>Broccoli — Viva — ~8 AED</p>
+    </div>
+
+    <div style={styles.foodCard}>
+      <h3>Meal 2 — Dinner (8:00 PM)</h3>
+
+      <p><strong>Salmon + Sweet Potato</strong></p>
+
+      <p>Calories: 720 kcal</p>
+      <p>Protein: 60g</p>
+      <p>Carbs: 55g</p>
+      <p>Fats: 22g</p>
+
+      <br />
+
+      <p><strong>Ingredients:</strong></p>
+
+      <ul>
+        <li>200g salmon</li>
+        <li>250g sweet potato</li>
+        <li>Spinach salad</li>
+        <li>Lemon + pepper</li>
+      </ul>
+
+      <br />
+
+      <p><strong>How To Make:</strong></p>
+
+      <ol>
+        <li>Bake salmon 12 mins</li>
+        <li>Air fry sweet potato</li>
+        <li>Prepare salad</li>
+      </ol>
+
+      <br />
+
+      <a
+        href="https://www.youtube.com/results?search_query=healthy+salmon+sweet+potato"
+        target="_blank"
+        style={styles.link}
+      >
+        ▶️ Watch Recipe
+      </a>
+
+      <br />
+      <br />
+
+      <p><strong>Dubai Ingredients:</strong></p>
+
+      <p>Salmon — Carrefour — ~55 AED/kg</p>
+      <p>Sweet Potato — Lulu — ~12 AED</p>
+      <p>Spinach — Viva — ~7 AED</p>
+    </div>
+  </div>
+
+  <div style={styles.warningBox}>
+    ⚠️ Target: Lose 7kg between 26/05/2026 and 26/07/2026
+    <br />
+    Maintain:
+    <br />
+    • 8,000–10,000 daily steps
+    <br />
+    • 3 workout days weekly
+    <br />
+    • 1 knee recovery day
+    <br />
+    • Water: 3L daily
+  </div>
+</section>      
     </main>
   );
 }
