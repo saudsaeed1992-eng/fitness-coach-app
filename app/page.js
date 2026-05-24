@@ -261,18 +261,40 @@ export default function Home() {
     })
   );
 
-  return (
-<>
+ return (
+  <>
     <main style={styles.page}>
-      <h1 style={styles.title}>
-        Babê Kaius
-      </h1>
+      <h1 style={styles.title}>Babê Kaius</h1>
 
       <p style={styles.subtitle}>
         2-Month Transformation Dashboard
       </p>
-    
-<section style={styles.card}>
+
+      <div style={styles.navbar}>
+        <button
+          style={styles.navButton}
+          onClick={() => setActiveSection("progress")}
+        >
+          📊 Progress
+        </button>
+
+        <button
+          style={styles.navButton}
+          onClick={() => setActiveSection("workout")}
+        >
+          🏋️ Workout
+        </button>
+
+        <button
+          style={styles.navButton}
+          onClick={() => setActiveSection("food")}
+        >
+          🥗 Food
+        </button>
+      </div>
+
+      {activeSection === "progress" && (
+        <section style={styles.card}>
   <h2>📊 Live Progress Tracker</h2>
         <input
           style={styles.input}
